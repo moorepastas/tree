@@ -10,7 +10,10 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y tmux 
+# install image formats for the sticker plugin to work
+dnf5 install -y \
+    qt6-qtimageformats \
+    qt6-qtmultimedia # also a dep of dms
 
 # Use a COPR Example:
 #
