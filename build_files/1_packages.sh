@@ -12,6 +12,7 @@ set -ouex pipefail
 # this installs a package from fedora repos
 # install image formats for the sticker plugin to work
 dnf5 install -y \
+    asciiquarium \
     qt6-qtimageformats 
 
 # Use a COPR Example:
