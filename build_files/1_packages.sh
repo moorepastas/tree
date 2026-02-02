@@ -13,7 +13,9 @@ set -ouex pipefail
 # install image formats for the sticker plugin to work
 dnf5 install -y \
     asciiquarium \
-    qt6-qtimageformats 
+    qt6-qtimageformats \
+    libstdc++-devel  # for ghcup
+
 
 # Use a COPR Example:
 #
