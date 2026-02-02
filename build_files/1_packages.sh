@@ -14,7 +14,8 @@ set -ouex pipefail
 dnf5 install -y \
     asciiquarium \
     qt6-qtimageformats \
-    libstdc++-devel  # for ghcup
+    libstdc++-devel gcc-c++
+    
 
 
 # Use a COPR Example:
