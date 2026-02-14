@@ -15,6 +15,8 @@ dnf5 install -y \
     asciiquarium \
     qt6-qtimageformats \
     libstdc++-devel gcc-c++
+
+dnf5 install -y --enablerepo=terra espanso-wayland
     
 
 
